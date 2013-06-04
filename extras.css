@@ -1,0 +1,268 @@
+/* Images */
+.brewer-img-eliptical {
+border-radius: 80%;
+}
+.brewer-img-rounded {
+border-radius: 3px;
+}
+.brewer-img-bordered {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+
+/* Thumbnails */
+.brewer-thumbnails li {
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+.brewer-thumbnails {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.brewer-thumbnails a:focus {
+    outline: 0 none;
+}
+
+.brewer-thumb {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.brewer-thumb img {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle; /* this will remove a thin line below the image */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.brewer-thumb-bordered {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.brewer-thumb .caption {
+    text-align: left;
+    display: block;
+    margin: 0 5px 6px;
+
+}
+.brewer-thumb .caption p {
+    margin: 0.3em 0 0;
+    font-size: 75%;
+}
+.brewer-thumb .caption .caption-head {
+    font-weight: bold;
+    margin-top: 0.3em;
+}
+
+.brewer-thumb-eliptical img {
+border-radius: 50%;
+}
+.brewer-thumb-rounded img {
+border-radius: 3px;
+}
+
+/* Badges/Pills */
+.brewer-badge,
+.brewer-badge-error,
+.brewer-badge-warning,
+.brewer-badge-success,
+.brewer-badge-info,
+.brewer-badge-inverse {
+    padding: 0.35em 0.9em 0.35em;
+    background-color: #9D988E;
+    color: #fff;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 1.2em;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 20px;
+    margin: 0.2em;
+}
+.brewer-badge-error {
+    background-color: #D13C38;
+}
+.brewer-badge-warning {
+    background-color: #E78C05;
+}
+.brewer-badge-success {
+    background-color: rgb(83, 180, 79);
+}
+.brewer-badge-info {
+    background-color: rgb(18, 169, 218);
+}
+.brewer-badge-inverse {
+    background-color: #4D370C;
+}
+
+/* Alerts */
+.brewer-alert {
+    position: relative;
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.brewer-alert label {
+    display: inline-block;
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+    white-space: nowrap;
+}
+
+.brewer-alert {
+    background-color: rgb(209, 235, 238);
+    color: rgb(102, 131, 145);
+}
+.brewer-alert-error {
+    background-color: #D13C38;
+    color: #fff;
+}
+
+.brewer-alert-warning {
+    background-color: rgb(250, 191, 103);
+    color: rgb(151, 96, 13);
+}
+
+.brewer-alert-success {
+    background-color: rgb(83, 180, 79);
+    color: #fff;
+}
+
+
+/* Contextual Modals */
+
+.brewer-popover {
+    position: relative;
+    width: 300px;
+    background-color: #f0f1f3;
+    color: #2f3034;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border: 1px solid #bfc0c8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    box-padding: border-box;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.brewer-arrow-border, .brewer-arrow {
+    border-style: solid;
+    border-width: 10px;
+    height:0;
+    width:0;
+    position:absolute;
+}
+
+
+/* POPOVER ARROW POSITIONING BOTTOM */
+
+.brewer-popover.bottom .brewer-arrow-border {
+    border-color: #bfc0c8 transparent transparent transparent;
+    bottom: -20px;
+    left: 50%;
+}
+.brewer-popover.bottom .brewer-arrow {
+    border-color: #f0f1f3 transparent transparent transparent;
+    bottom:-19px;
+    left: 50%;
+}
+
+/* POPOVER ARROW POSITIONING TOP*/
+
+.brewer-popover.top .brewer-arrow-border {
+    border-color: transparent transparent #bfc0c8 transparent;
+    top: -21px;
+    left: 50%;
+}
+.brewer-popover.top .brewer-arrow {
+    border-color: transparent transparent #f0f1f3 transparent;
+    top:-20px;
+    left: 50%;
+}
+
+/* POPOVER ARROW POSITIONING RIGHT*/
+
+.brewer-popover.right .brewer-arrow-border {
+    border-color: transparent transparent transparent #bfc0c8;
+    top: 45%;
+    right: -21px;
+}
+.brewer-popover.right .brewer-arrow {
+    border-color: transparent transparent transparent #f0f1f3;
+    top:45%;
+    right: -20px;
+}
+
+
+/* POPOVER ARROW POSITIONING LEFT*/
+
+.brewer-popover.left .brewer-arrow-border {
+    border-color: transparent #bfc0c8 transparent transparent;
+    top: 45%;
+    left: -21px;
+}
+.brewer-popover.left .brewer-arrow {
+    border-color: transparent #f0f1f3 transparent transparent;
+    top:45%;
+    left: -20px;
+}
+
+
+/* BUTTON IMPROVEMENTS */
+.brewer-button-block {
+    display: block;
+}
+.brewer-button.brewer-button-small {
+    padding: .6em 2em .65em;
+    font-size:70%;
+}
+.brewer-button.brewer-button-large {
+    padding: .8em 5em .9em;
+    font-size:110%;
+}
+.brewer-button.brewer-button-selected {
+    background-color: #345fcb;
+    color: #fff;
+}
+.brewer-button.brewer-button-secondary {
+    background: rgb(161, 195, 238);
+    color: rgb(26, 88, 122);
+}
+.brewer-button.brewer-button-error {
+    background: rgb(214, 86, 75);
+    color: white;
+}
+.brewer-button.brewer-button-success {
+    background: rgb(54, 197, 71);
+    color: white;
+}
+.brewer-button.brewer-button-warning {
+    background: rgb(255, 163, 0);
+    color: white;
+}
